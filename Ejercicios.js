@@ -32,6 +32,9 @@ function EnteroMasGrande(array) {
     // => 8
     //Aqui tu codigo
     //no self
+    for(var i=0;i<array.length;i++){
+        
+    }
 }
 function Permutaciones(str){
     
