@@ -1,7 +1,8 @@
 function cacheFunction(cb) {
     // Usa closures para crear un cache para la funcion cb.
     // la funcion que retornas debe aceptar un solo argumento e invocar a cb con ese argumento
-    // cuando la funcion que hayas retornado es invocada de nuevo, deberia guardar el argumento y el resultado de la invocacion
+    // cuando la funcion que hayas retornado es invocada de nuevo, deberia guardar el argumento 
+    //y el resultado de la invocacion
     // cuando la funcion que retornaste sea invocada de nuevo con un argumento con el cual se habia invocado anterioremente, no deberia invocar de nuevo a cb
     // deberia retornar el resultado (previamente guardado)
     // Ejemplo:
@@ -30,6 +31,7 @@ function EnteroMasGrande(array) {
     //maxOf([3, 1, 6, 8, 2, 4, 5])
     // => 8
     //Aqui tu codigo
+    //no self
 }
 function Permutaciones(str){
     
