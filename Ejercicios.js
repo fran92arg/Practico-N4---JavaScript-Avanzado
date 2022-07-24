@@ -33,7 +33,7 @@ function EnteroMasGrande(array) {
     //Aqui tu codigo
     //no self
     for(var i=0;i<array.length;i++){
-        
+        console.log("a")
     }
 }
 function Permutaciones(str){
