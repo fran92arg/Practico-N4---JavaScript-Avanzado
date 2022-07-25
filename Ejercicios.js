@@ -25,17 +25,25 @@ function CadenaInvertida(str) {
 
 function EnteroMasGrande(array) {
     // Instruction:
-    //Dada una matriz, escriba una función recursiva para encontrar el entero más grande en una matriz. */// Ejemplos:
+    //Dada una matriz, escriba una función recursiva para encontrar el entero más grande 
+    //en una matriz. */// Ejemplos:
     //maxOf([1, 4, 5, 3])
     // => 5
     //maxOf([3, 1, 6, 8, 2, 4, 5])
     // => 8
     //Aqui tu codigo
-    //no self
+    var max=0
     for(var i=0;i<array.length;i++){
-        console.log("a")
+        if(array[i].length===undefined && array[i]>max){//el elemento no es array
+            max=array[i]
+        }else if(array[i].length!==undefined){
+            max=EnteroMasGrande(array[i])
+        }
     }
+    return max
+
 }
+console.log("maximo: ",EnteroMasGrande([1, 4, [5,4,90], 10]))
 function Permutaciones(str){
     
 // Instrucción:
