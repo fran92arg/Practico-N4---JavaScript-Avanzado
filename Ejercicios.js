@@ -2,8 +2,9 @@ function cacheFunction(cb) {
     // Usa closures para crear un cache para la funcion cb.
     // la funcion que retornas debe aceptar un solo argumento e invocar a cb con ese argumento
     // cuando la funcion que hayas retornado es invocada de nuevo, deberia guardar el argumento 
-    //y el resultado de la invocacion
-    // cuando la funcion que retornaste sea invocada de nuevo con un argumento con el cual se habia invocado anterioremente, no deberia invocar de nuevo a cb
+    // y el resultado de la invocacion
+    // cuando la funcion que retornaste sea invocada de nuevo con un argumento con el cual 
+    // se habia invocado anterioremente, no deberia invocar de nuevo a cb
     // deberia retornar el resultado (previamente guardado)
     // Ejemplo:
     // cb -> function(x) { return x * x; }
@@ -16,34 +17,40 @@ function cacheFunction(cb) {
 
 function CadenaInvertida(str) {
     // Instrucción:
-    // Dada una cadena, escriba una función recursiva para devolver la cadena invertida. */// Ejemplo:
-    // => 'divoco'
+    // Dada una cadena, escriba una función recursiva para devolver la cadena invertida. 
+    // Ejemplo:
+    // => 'divoc'
     //cadena inversa('covid')
-    // Aqui tu codigo
-
-}
-
-function EnteroMasGrande(array) {
-    // Instruction:
-    //Dada una matriz, escriba una función recursiva para encontrar el entero más grande 
-    //en una matriz. */// Ejemplos:
-    //maxOf([1, 4, 5, 3])
-    // => 5
-    //maxOf([3, 1, 6, 8, 2, 4, 5])
-    // => 8
-    //Aqui tu codigo
-    var max=0
-    for(var i=0;i<array.length;i++){
-        if(array[i].length===undefined && array[i]>max){//el elemento no es array
-            max=array[i]
-        }else if(array[i].length!==undefined){
-            max=EnteroMasGrande(array[i])
-        }
+    // Aqui tu codigo}
+    var arreglo=[]
+    for(var i=str.length-1;i>=0;i--){
+        arreglo+=str[i]
     }
-    return max
-
+    return arreglo
+    //no pude resolverlo con recursion
 }
-console.log("maximo: ",EnteroMasGrande([1, 4, [5,4,90], 10]))
+console.log(CadenaInvertida("hola"))
+// function EnteroMasGrande(array) {
+//     Instruction:
+//     Dada una matriz, escriba una función recursiva para encontrar el entero más grande 
+//     en una matriz. */// Ejemplos:
+//     maxOf([1, 4, 5, 3])
+//     => 5
+//     maxOf([3, 1, 6, 8, 2, 4, 5])
+//     => 8
+//     Aqui tu codigo
+//     var max=0
+//     for(var i=0;i<array.length;i++){
+//         if(array[i].length===undefined && array[i]>max){//el elemento no es array
+//             max=array[i]
+//         }else if(array[i].length!==undefined){
+//             max=EnteroMasGrande(array[i])
+//         }
+//     }
+//     return max
+
+// }
+// console.log("maximo: ",EnteroMasGrande([1, 4, [5,4,90], 10]))
 function Permutaciones(str){
     
 // Instrucción:
