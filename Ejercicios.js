@@ -23,13 +23,18 @@ function CadenaInvertida(str) {
     //cadena inversa('covid')
     // Aqui tu codigo}
     var arreglo=[]
-    for(var i=str.length-1;i>=0;i--){
-        arreglo+=str[i]
+    if(str==""){
+        return arreglo
+    }
+    else{
+        arreglo+=str[str.length-1]+CadenaInvertida(str.substring(0,str.length-1)) 
     }
     return arreglo
-    //no pude resolverlo con recursion
 }
 console.log(CadenaInvertida("hola"))
+// var st="cadena"
+// console.log(st.substring(0,st.length-1))
+// console.log(CadenaInvertida("hola"))
 // function EnteroMasGrande(array) {
 //     Instruction:
 //     Dada una matriz, escriba una función recursiva para encontrar el entero más grande 
