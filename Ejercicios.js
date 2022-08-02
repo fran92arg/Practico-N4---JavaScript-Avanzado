@@ -12,26 +12,38 @@ function cacheFunction(cb) {
     // si la invocas de nuevo con 5, deberia retornar 25 (guardado previament en el cache)
     // Tips, usá un objeto donde cada propiedad sea un argumento, y el valor el resultado.
     // Aqui tu codigo
-
-}
-
-function CadenaInvertida(str) {
-    // Instrucción:
-    // Dada una cadena, escriba una función recursiva para devolver la cadena invertida. 
-    // Ejemplo:
-    // => 'divoc'
-    //cadena inversa('covid')
-    // Aqui tu codigo}
-    var arreglo=[]
-    if(str==""){
-        return arreglo
+    var obj={}
+    //console.log("Objeto: ",obj)
+    return function buscaNum(numero){
+        if(obj.hasOwnProperty(numero)){
+            console.log("si está: ",numero)
+            return obj[numero]
+        }else{
+            console.log(cb*cb)
+            return obj[numero]=cb*cb
+        }
     }
-    else{
-        arreglo+=str[str.length-1]+CadenaInvertida(str.substring(0,str.length-1)) 
-    }
-    return arreglo
 }
-console.log(CadenaInvertida("hola"))
+var prueba=cacheFunction(5)
+prueba(5)
+prueba(5)
+// function CadenaInvertida(str) {
+//     // Instrucción:
+//     // Dada una cadena, escriba una función recursiva para devolver la cadena invertida. 
+//     // Ejemplo:
+//     // => 'divoc'
+//     //cadena inversa('covid')
+//     // Aqui tu codigo}
+//     var arreglo=[]
+//     if(str==""){
+//         return arreglo
+//     }
+//     else{
+//         arreglo+=str[str.length-1]+CadenaInvertida(str.substring(0,str.length-1)) 
+//     }//le saco un caracter a cada string y lo vuelvo a pasar como argumento hasta tener un sring vacio
+//     return arreglo
+// }
+// console.log(CadenaInvertida("francisco"))
 // var st="cadena"
 // console.log(st.substring(0,st.length-1))
 // console.log(CadenaInvertida("hola"))
