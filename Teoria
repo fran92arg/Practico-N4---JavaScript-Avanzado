@@ -1,20 +1,23 @@
 Explica los siguentes conceptos con tus propias palabras.
 
 
-1- Scope
+1- Scope: Es el alcance de las variables. Puede ser local, que se refiere a todo el programa,
+o local, que se refiere a la función donde se declara la variable
 
-2- Tipos de datos
+2- Tipos de datos: Se refiere al tipo de dato que se almacena en una variable. Ej: string, entero, array,objeto, etc.
 
-3- Operadores
+3- Operadores: Símbolos especiales que permiten realizar distintas operacines con las variables,
+por ejemplo el operador suma (+)
 
-4- Coercion
+4- Coercion: Conversión automática de un tipo de dato a otro diferente
 
-5- Precedencia
+5- Precedencia: Algunos operadores y la operación que representan se resuelven antes que otros operadores.
+Primero se resuelven los operadores de mayor precedencia.
 
-6- Bind
+6- Bind: Es un método que permite que "this" haga referencia a un objeto pasado por parámetro a la función que lo invoca, en vez de hacer referencia al objeto global.
 
-7- Apply
+7- Apply: Similar a bind, pero recibe un array como parámetro.
 
-8- Promesas
+8- Promesas: Objeto que representa el fin de una petición asincrónica, tanto exitoso como no. Representa un valor que no está disponible actualmente, pero que si lo estará en un futuro.
 
-9- Recursividad
+9- Recursividad: Es un procedimiento en el que una función se invoca a sí misma.
